@@ -26,8 +26,8 @@ object Q3 {
       else
       {
         tmp = tmp + name.charAt(i).toString
-        i = i + 1
       }
+      i = i + 1
     }
     tmp
   }
