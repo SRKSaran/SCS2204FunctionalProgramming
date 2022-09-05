@@ -4,7 +4,7 @@ object Q1 {
 
 
   def encryption(): Unit = {
-    val alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ12345"
+    val alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
     val shift = (scala.io.StdIn.readLine("Shift by : ").toInt + alphabet.size) % alphabet.size
 
@@ -26,7 +26,7 @@ object Q1 {
 
   def decryption(): Unit = {
 
-    val alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ12345"
+    val alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     val shift =  (scala.io.StdIn.readLine("Shift code: ").toInt + alphabet.size) % alphabet.size
     val inputText = scala.io.StdIn.readLine("Secrete message: ")
     val outputText = inputText.map((c: Char) => {
